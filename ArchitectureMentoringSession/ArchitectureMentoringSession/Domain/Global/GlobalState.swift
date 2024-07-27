@@ -11,7 +11,7 @@ typealias UserID = ModelID<User>
 typealias PostID = ModelID<Post>
 typealias CategoryID = ModelID<Category>
 
-struct GlobalState {
+struct GlobalState: StateType {
     
     // MARK: - Models
     var userIds = [UserID]()

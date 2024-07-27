@@ -19,6 +19,6 @@ protocol ContextType: AnyObject {
     func stateObservable() -> Observable<(State, Action?)>
     
     /// Change the current state with a passed state and propagate the updated state. If an action exists, it's spreaded along.
-    func propagate(state: State, action: Action)
+    func propagate(state: State, action: Action?)
 }
 
