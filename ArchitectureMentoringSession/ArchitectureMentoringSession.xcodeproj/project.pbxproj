@@ -51,6 +51,11 @@
 		807620422C553BA800A3BA42 /* PostRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807620412C553BA800A3BA42 /* PostRepresentable.swift */; };
 		807620442C553BB200A3BA42 /* ItemRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807620432C553BB200A3BA42 /* ItemRepresentable.swift */; };
 		807620462C553BB800A3BA42 /* CategoryRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807620452C553BB800A3BA42 /* CategoryRepresentable.swift */; };
+		807620492C553C0A00A3BA42 /* AppStateReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807620482C553C0A00A3BA42 /* AppStateReducer.swift */; };
+		8076204B2C553C4D00A3BA42 /* UserReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8076204A2C553C4D00A3BA42 /* UserReducer.swift */; };
+		8076204D2C553C5000A3BA42 /* PostReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8076204C2C553C5000A3BA42 /* PostReducer.swift */; };
+		8076204F2C553C5600A3BA42 /* ItemReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8076204E2C553C5600A3BA42 /* ItemReducer.swift */; };
+		807620512C553C5D00A3BA42 /* CategoryReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807620502C553C5D00A3BA42 /* CategoryReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +113,11 @@
 		807620412C553BA800A3BA42 /* PostRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepresentable.swift; sourceTree = "<group>"; };
 		807620432C553BB200A3BA42 /* ItemRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRepresentable.swift; sourceTree = "<group>"; };
 		807620452C553BB800A3BA42 /* CategoryRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepresentable.swift; sourceTree = "<group>"; };
+		807620482C553C0A00A3BA42 /* AppStateReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateReducer.swift; sourceTree = "<group>"; };
+		8076204A2C553C4D00A3BA42 /* UserReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReducer.swift; sourceTree = "<group>"; };
+		8076204C2C553C5000A3BA42 /* PostReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostReducer.swift; sourceTree = "<group>"; };
+		8076204E2C553C5600A3BA42 /* ItemReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemReducer.swift; sourceTree = "<group>"; };
+		807620502C553C5D00A3BA42 /* CategoryReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +363,11 @@
 		807620472C553BD800A3BA42 /* Reducers */ = {
 			isa = PBXGroup;
 			children = (
+				807620482C553C0A00A3BA42 /* AppStateReducer.swift */,
+				8076204A2C553C4D00A3BA42 /* UserReducer.swift */,
+				8076204C2C553C5000A3BA42 /* PostReducer.swift */,
+				8076204E2C553C5600A3BA42 /* ItemReducer.swift */,
+				807620502C553C5D00A3BA42 /* CategoryReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -468,6 +483,7 @@
 				8076200B2C55394500A3BA42 /* CategoryListVC.swift in Sources */,
 				807620152C55395F00A3BA42 /* PostListVM.swift in Sources */,
 				807620042C55364600A3BA42 /* GlobalAction.swift in Sources */,
+				807620492C553C0A00A3BA42 /* AppStateReducer.swift in Sources */,
 				8076200D2C55394A00A3BA42 /* CategoryListVM.swift in Sources */,
 				80761FF12C5532C400A3BA42 /* GlobalContext.swift in Sources */,
 				807620382C553B3600A3BA42 /* UserPresenter.swift in Sources */,
@@ -486,6 +502,7 @@
 				807620132C55395A00A3BA42 /* PostListVC.swift in Sources */,
 				8076203C2C553B4800A3BA42 /* MarketItemPresenter.swift in Sources */,
 				80761FB02C55251E00A3BA42 /* AppDelegate.swift in Sources */,
+				807620512C553C5D00A3BA42 /* CategoryReducer.swift in Sources */,
 				8076202F2C553A1000A3BA42 /* VCFactory+Category.swift in Sources */,
 				80761FFB2C5533A100A3BA42 /* ActionTagType.swift in Sources */,
 				80761FB22C55251E00A3BA42 /* SceneDelegate.swift in Sources */,
@@ -493,6 +510,8 @@
 				8076202B2C553A0200A3BA42 /* VCFactory+User.swift in Sources */,
 				807620252C5539CD00A3BA42 /* ItemDetailVC.swift in Sources */,
 				80761FE92C55296300A3BA42 /* ID.swift in Sources */,
+				8076204F2C553C5600A3BA42 /* ItemReducer.swift in Sources */,
+				8076204B2C553C4D00A3BA42 /* UserReducer.swift in Sources */,
 				807620202C5539AE00A3BA42 /* PostDetailVM.swift in Sources */,
 				807620402C553B9D00A3BA42 /* UserRepresentable.swift in Sources */,
 				80761FE52C55294700A3BA42 /* AppState.swift in Sources */,
@@ -501,6 +520,7 @@
 				80761FED2C552C8600A3BA42 /* Category.swift in Sources */,
 				807620422C553BA800A3BA42 /* PostRepresentable.swift in Sources */,
 				8076200F2C55395000A3BA42 /* ItemListVC.swift in Sources */,
+				8076204D2C553C5000A3BA42 /* PostReducer.swift in Sources */,
 				807620112C55395500A3BA42 /* ItemListVM.swift in Sources */,
 				807620292C5539F700A3BA42 /* VCFactory.swift in Sources */,
 			);
