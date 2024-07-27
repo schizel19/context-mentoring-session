@@ -27,6 +27,6 @@ struct AppState: StateType {
     
     // MARK: - Relationships
     var postIdsByUserId = [UserID: [PostID]]()
-    var itemIdsByUserId = [UserID: [MarketItem]]()
+    var itemIdsByUserId = [UserID: [ItemID]]()
     var postIdsByCategoryId = [CategoryID: [PostID]]()
 }

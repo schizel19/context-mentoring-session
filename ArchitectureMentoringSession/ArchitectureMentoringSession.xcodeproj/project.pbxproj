@@ -56,6 +56,10 @@
 		8076204D2C553C5000A3BA42 /* PostReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8076204C2C553C5000A3BA42 /* PostReducer.swift */; };
 		8076204F2C553C5600A3BA42 /* ItemReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8076204E2C553C5600A3BA42 /* ItemReducer.swift */; };
 		807620512C553C5D00A3BA42 /* CategoryReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807620502C553C5D00A3BA42 /* CategoryReducer.swift */; };
+		807620542C55447C00A3BA42 /* AppState+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807620532C55447C00A3BA42 /* AppState+User.swift */; };
+		807620562C5544EB00A3BA42 /* AppState+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807620552C5544EB00A3BA42 /* AppState+Post.swift */; };
+		807620582C55461800A3BA42 /* AppState+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807620572C55461800A3BA42 /* AppState+Category.swift */; };
+		8076205A2C55472F00A3BA42 /* AppState+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807620592C55472F00A3BA42 /* AppState+Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +122,10 @@
 		8076204C2C553C5000A3BA42 /* PostReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostReducer.swift; sourceTree = "<group>"; };
 		8076204E2C553C5600A3BA42 /* ItemReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemReducer.swift; sourceTree = "<group>"; };
 		807620502C553C5D00A3BA42 /* CategoryReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryReducer.swift; sourceTree = "<group>"; };
+		807620532C55447C00A3BA42 /* AppState+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppState+User.swift"; sourceTree = "<group>"; };
+		807620552C5544EB00A3BA42 /* AppState+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppState+Post.swift"; sourceTree = "<group>"; };
+		807620572C55461800A3BA42 /* AppState+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppState+Category.swift"; sourceTree = "<group>"; };
+		807620592C55472F00A3BA42 /* AppState+Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppState+Item.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,8 +203,8 @@
 		80761FE02C55256C00A3BA42 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				807620522C55447000A3BA42 /* AppState */,
 				807620472C553BD800A3BA42 /* Reducers */,
-				80761FE42C55294700A3BA42 /* AppState.swift */,
 				80761FF62C55331E00A3BA42 /* ContextType.swift */,
 				80761FFA2C5533A100A3BA42 /* ActionTagType.swift */,
 				80761FF82C55332600A3BA42 /* StateType.swift */,
@@ -364,12 +372,24 @@
 			isa = PBXGroup;
 			children = (
 				807620482C553C0A00A3BA42 /* AppStateReducer.swift */,
-				8076204A2C553C4D00A3BA42 /* UserReducer.swift */,
-				8076204C2C553C5000A3BA42 /* PostReducer.swift */,
-				8076204E2C553C5600A3BA42 /* ItemReducer.swift */,
 				807620502C553C5D00A3BA42 /* CategoryReducer.swift */,
+				8076204E2C553C5600A3BA42 /* ItemReducer.swift */,
+				8076204C2C553C5000A3BA42 /* PostReducer.swift */,
+				8076204A2C553C4D00A3BA42 /* UserReducer.swift */,
 			);
 			path = Reducers;
+			sourceTree = "<group>";
+		};
+		807620522C55447000A3BA42 /* AppState */ = {
+			isa = PBXGroup;
+			children = (
+				80761FE42C55294700A3BA42 /* AppState.swift */,
+				807620532C55447C00A3BA42 /* AppState+User.swift */,
+				807620552C5544EB00A3BA42 /* AppState+Post.swift */,
+				807620572C55461800A3BA42 /* AppState+Category.swift */,
+				807620592C55472F00A3BA42 /* AppState+Item.swift */,
+			);
+			path = AppState;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,15 +516,19 @@
 				80761FE72C55295E00A3BA42 /* User.swift in Sources */,
 				807620442C553BB200A3BA42 /* ItemRepresentable.swift in Sources */,
 				807620172C55396800A3BA42 /* UserListVC.swift in Sources */,
+				8076205A2C55472F00A3BA42 /* AppState+Item.swift in Sources */,
 				8076203A2C553B3F00A3BA42 /* CategoryPresenter.swift in Sources */,
+				807620582C55461800A3BA42 /* AppState+Category.swift in Sources */,
 				80761FF92C55332600A3BA42 /* StateType.swift in Sources */,
 				80761FF72C55331E00A3BA42 /* ContextType.swift in Sources */,
 				807620132C55395A00A3BA42 /* PostListVC.swift in Sources */,
 				8076203C2C553B4800A3BA42 /* MarketItemPresenter.swift in Sources */,
 				80761FB02C55251E00A3BA42 /* AppDelegate.swift in Sources */,
+				807620542C55447C00A3BA42 /* AppState+User.swift in Sources */,
 				807620512C553C5D00A3BA42 /* CategoryReducer.swift in Sources */,
 				8076202F2C553A1000A3BA42 /* VCFactory+Category.swift in Sources */,
 				80761FFB2C5533A100A3BA42 /* ActionTagType.swift in Sources */,
+				807620562C5544EB00A3BA42 /* AppState+Post.swift in Sources */,
 				80761FB22C55251E00A3BA42 /* SceneDelegate.swift in Sources */,
 				8076202D2C553A0800A3BA42 /* VCFactory+Post.swift in Sources */,
 				8076202B2C553A0200A3BA42 /* VCFactory+User.swift in Sources */,

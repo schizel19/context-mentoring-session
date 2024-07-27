@@ -19,15 +19,13 @@ extension UserReducer: AppStateReducer {
         switch self {
         case .load(let users):
             newState.userIds = users.map { $0.id }
-            users.forEach {
-                newState.userById[$0.id] = $0
-            }
+            newState.register(users)
         case .remove(let userId):
             newState.userIds.removeAll(where: { $0 == userId })
             newState.userById.removeValue(forKey: userId)
         case .add(let user):
             newState.userIds.append(user.id)
-            newState.userById[user.id] = user
+            newState.register([user])
         }
         
         return newState
