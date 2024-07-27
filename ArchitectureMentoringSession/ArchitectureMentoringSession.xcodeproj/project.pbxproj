@@ -12,7 +12,7 @@
 		80761FB92C55252300A3BA42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80761FB82C55252300A3BA42 /* Assets.xcassets */; };
 		80761FBC2C55252300A3BA42 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 80761FBB2C55252300A3BA42 /* Base */; };
 		80761FC72C55252300A3BA42 /* ArchitectureMentoringSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80761FC62C55252300A3BA42 /* ArchitectureMentoringSessionTests.swift */; };
-		80761FE52C55294700A3BA42 /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80761FE42C55294700A3BA42 /* GlobalState.swift */; };
+		80761FE52C55294700A3BA42 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80761FE42C55294700A3BA42 /* AppState.swift */; };
 		80761FE72C55295E00A3BA42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80761FE62C55295E00A3BA42 /* User.swift */; };
 		80761FE92C55296300A3BA42 /* ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80761FE82C55296300A3BA42 /* ID.swift */; };
 		80761FEB2C552AAF00A3BA42 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80761FEA2C552AAF00A3BA42 /* Post.swift */; };
@@ -47,7 +47,7 @@
 		80761FBD2C55252300A3BA42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80761FC22C55252300A3BA42 /* ArchitectureMentoringSessionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureMentoringSessionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80761FC62C55252300A3BA42 /* ArchitectureMentoringSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureMentoringSessionTests.swift; sourceTree = "<group>"; };
-		80761FE42C55294700A3BA42 /* GlobalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalState.swift; sourceTree = "<group>"; };
+		80761FE42C55294700A3BA42 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		80761FE62C55295E00A3BA42 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		80761FE82C55296300A3BA42 /* ID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ID.swift; sourceTree = "<group>"; };
 		80761FEA2C552AAF00A3BA42 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -123,6 +123,7 @@
 		80761FDF2C55256000A3BA42 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				80761FF22C5532E700A3BA42 /* GlobalContext */,
 				80761FAF2C55251E00A3BA42 /* AppDelegate.swift */,
 				80761FB12C55251E00A3BA42 /* SceneDelegate.swift */,
 			);
@@ -132,10 +133,10 @@
 		80761FE02C55256C00A3BA42 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				80761FE42C55294700A3BA42 /* AppState.swift */,
 				80761FF62C55331E00A3BA42 /* ContextType.swift */,
 				80761FFA2C5533A100A3BA42 /* ActionTagType.swift */,
 				80761FF82C55332600A3BA42 /* StateType.swift */,
-				80761FF22C5532E700A3BA42 /* Global */,
 				80761FE12C55257200A3BA42 /* Models */,
 			);
 			path = Domain;
@@ -160,14 +161,13 @@
 			path = Feature;
 			sourceTree = "<group>";
 		};
-		80761FF22C5532E700A3BA42 /* Global */ = {
+		80761FF22C5532E700A3BA42 /* GlobalContext */ = {
 			isa = PBXGroup;
 			children = (
-				80761FE42C55294700A3BA42 /* GlobalState.swift */,
 				80761FF02C5532C400A3BA42 /* GlobalContext.swift */,
 				807620032C55364600A3BA42 /* GlobalAction.swift */,
 			);
-			path = Global;
+			path = GlobalContext;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +288,7 @@
 				80761FFB2C5533A100A3BA42 /* ActionTagType.swift in Sources */,
 				80761FB22C55251E00A3BA42 /* SceneDelegate.swift in Sources */,
 				80761FE92C55296300A3BA42 /* ID.swift in Sources */,
-				80761FE52C55294700A3BA42 /* GlobalState.swift in Sources */,
+				80761FE52C55294700A3BA42 /* AppState.swift in Sources */,
 				80761FEB2C552AAF00A3BA42 /* Post.swift in Sources */,
 				80761FED2C552C8600A3BA42 /* Category.swift in Sources */,
 			);

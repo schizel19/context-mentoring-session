@@ -9,7 +9,7 @@ import RxSwift
 import RxRelay
 
 class GlobalContext: ContextType {
-    typealias State = GlobalState
+    typealias State = AppState
     typealias Action = GlobalAction
     
     var state: State {
