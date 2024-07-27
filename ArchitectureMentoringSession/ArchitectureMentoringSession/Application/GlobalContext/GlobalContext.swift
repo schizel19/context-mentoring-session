@@ -17,7 +17,6 @@ class GlobalContext: ContextType {
     }
     
     private let _eventSubject: BehaviorRelay<(State, Action?)>
-    private var _prevState: State?
     
     required init(state: State) {
         _eventSubject = .init(value: (state, nil))
